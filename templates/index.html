@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Report Simplifier</title>
+</head>
+<body>
+    <h1>Summarize a Medical Report</h1>
+    <form method="POST">
+        <textarea name="report" rows="10" cols="80" placeholder="Paste medical report here..."></textarea><br><br>
+        <input type="submit" value="Summarize">
+    </form>
+    {% if summary %}
+        <h2>Simplified Summary:</h2>
+        <p>{{ summary }}</p>
+    {% endif %}
+</body>
+</html>
